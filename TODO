@@ -1,0 +1,71 @@
+# MediaLib
+
+A simple web based Media Library that is based on Laravel 5 and uses RESTFul design pattern
+
+Start Date: 2015-April-11
+
+## Progress
+
+### Database Stuff
+
+Initial Database Design for the following:
+
+* Movies
+* Animes
+* Studio - Pivot
+* Tags - Pivot
+
+#### Still Working
+
+* TvShows
+* Ratings/Stars
+* Collection (e.g. Movies/Tv/Anime)
+
+#### Not Even...
+
+* Books
+* Music {CDs}
+* Software
+
+---
+
+### Models
+
+Initial Models for
+
+* Anime
+* Movie
+* Studio
+* Tag
+* Rating
+* TvShow
+* User
+    * Updated to add first and last name (from only name)
+
+---
+
+### Routes
+
+Only initial tinkered with them
+
+---
+
+### User Interface
+
+* Tweaked Registration page for changed User Model/Table
+* Added landing page (page.landing) with test text.
+
+---
+
+# TODO
+
+* Need to add SoftDelete
+* Setup Local Homestead/Database Enviroment
+* TvShow
+    Much more research on how to do this
+    * TvShow
+        * Basic Info?
+    * Seasons
+        * Discs?
+* Series/Collections
+    How do I want to implement?
