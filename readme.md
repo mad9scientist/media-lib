@@ -1,7 +1,7 @@
 ## MediaLib / Media Library Project
 
 **Status**: Planning/Implementation  
-**Version**: 0.0.0 [20150411] (Not-Even-Alpha)  
+**Version**: 0.0.0-20150411 (Not-Even-Alpha)  
 **Author**: [Chris Holbrook / Mad9Scientist](http://mad9scientist.com/)  
 **Repo**: [GitHub.com](https://github.com/mad9scientist/media-lib/)  
 
