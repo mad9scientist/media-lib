@@ -2,16 +2,10 @@
 
 class ExampleTest extends TestCase {
 
-	/**
-	 * A basic functional test example.
-	 *
-	 * @return void
-	 */
-	public function testBasicExample()
+	/** @test */
+	public function it_loads_the_homepage()
 	{
-		$response = $this->call('GET', '/');
-
-		$this->assertEquals(200, $response->getStatusCode());
+		$this->visit('/')
+			->andSee('Laravel');
 	}
-
 }
