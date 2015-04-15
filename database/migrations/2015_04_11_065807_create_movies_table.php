@@ -26,6 +26,7 @@ class CreateMoviesTable extends Migration {
 			$table->string('wikiUrl')->nullable();	// link to Wikipedia for item
 			$table->string('format');				// DVD, Digital Copy, Blu-ray, VHS, etc
 			$table->string('posterUrl')->nullable();// URL to image for item, e.g. Movie Poster
+			$table->softDeletes();
 			$table->timestamps();
 
 			$table->foreign('user_id')
