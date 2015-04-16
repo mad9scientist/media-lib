@@ -34,6 +34,51 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="{{ url('/') }}">Home</a></li>
+					@if (! Auth::guest())
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Movies <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Create New Movie</a></li>
+								<li><a href="#">Create a New Movie Series</a></li>
+								<li><a href="#">List All Movies</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TV Shows <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Create New TV Show</a></li>
+								<li><a href="#">Add New Season</a></li>
+								<li><a href="#">List All TV Show</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Animes <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Create New Anime</a></li>
+								<li><a href="#">Create a New Anime Series</a></li>
+								<li><a href="#">List All Animes</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Books <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Create New Book</a></li>
+								<li><a href="#">Create New eBook</a></li>
+								<li><a href="#">List All Books</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Music <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Create New Album</a></li>
+								<li><a href="#">List All Albums</a></li>
+							</ul>
+						</li>
+					@endif
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -42,8 +87,10 @@
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->firstName }} {{ Auth::user()->lastName}}<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
+								<li><a href="">Profile</a></li>
+								<li><a href="">Settings</a></li>
 								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
 							</ul>
 						</li>
