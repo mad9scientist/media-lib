@@ -18,7 +18,7 @@ class CreateMoviesTable extends Migration {
 			$table->integer('user_id')->unsigned();	// Owning User
 			$table->string('libId')->nullable();  	// Item Internal ID
 			$table->string('title');				// Full Title of Movie
-			$table->string('edition')->nullable;	// Edition Name (Optional)
+			$table->string('edition')->nullable();	// Edition Name (Optional)
 			$table->integer('releaseYear');			// Year the movie was released
 			$table->string('motionPictureRating');	// MPAA Rating
 			$table->integer('runtime');				// Length of Movie in Minutes
